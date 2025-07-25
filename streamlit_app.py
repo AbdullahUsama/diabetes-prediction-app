@@ -21,9 +21,11 @@ st.set_page_config(
 def load_model():
     try:
         # Load the Keras deep learning model
-        model = tf.keras.models.load_model('model/diabetes_model.h5')
+        # model = tf.keras.models.load_model('model/diabetes_model.h5')
+        model = tf.keras.models.load_model('diabetes_model.h5')
         # Load the scikit-learn scaler object for data preprocessing
-        scaler = joblib.load('model/scaler.pkl')
+        # scaler = joblib.load('model/scaler.pkl')
+        scaler = joblib.load('scaler.pkl')
         return model, scaler, True
     except Exception as e:
         # Display an error message if model or scaler files cannot be loaded
