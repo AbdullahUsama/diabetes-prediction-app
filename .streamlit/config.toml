@@ -1,0 +1,4 @@
+[runner]
+# Set the Python version explicitly to one that TensorFlow supports.
+# Python 3.10 is a good stable choice for TensorFlow.
+python_version = "3.10"
